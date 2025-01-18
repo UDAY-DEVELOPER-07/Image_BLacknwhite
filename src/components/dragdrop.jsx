@@ -54,19 +54,7 @@ const DropFileInput = props => {
         
       };
     }
-    //   const handleUpload = async e => {
-    //     e.preventDefault();
-    //     const formData = new FormData();
-    //     formData.append("fileList", fileList.raw);
-    
-    //     await fetch("YOUR_URL", {
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "multipart/form-data"
-    //       },
-    //       body: formData
-    //     });
-    //   };
+
 
     return (
         <>
@@ -97,37 +85,6 @@ const DropFileInput = props => {
                 </Button>
             </label>
             
-                  {/* {fileList && (
-                         <div style={{ marginTop: 20 }}>
-                            <p>Selected File: {fileList}</p>
-                         </div>
-                    )} */}
-                {/* {
-                    fileList.length > 0 ? (
-                    <div className="drop-file-preview">
-                        <p className="drop-file-preview__title">
-                            Ready to upload
-                        </p>
-                        {
-                            fileList.map((item, index) => (
-                                <div key={index} className="drop-file-preview__item">
-                                    {/* <img src={ImageConfig[item.type.split('/')[1]] ||
-                                        ImageConfig['default']} alt="" /> */}
-                                        {/* <img src={"Latest_school_college_fee_receipt_11017527_62179728RAKBNQ.jpg"}/>
-                                    <div className="drop-file-preview__item__info">
-                                        <p>{item.name}</p>
-                                        <p>{item.size}B</p>
-                                    </div>
-                                    <span className="drop-file-preview__item__del"
-                                        onClick={() => fileRemove(item)}>
-                                        <div className='w-28 h-7 bg-red-600  rounded-md mr-4 '><h3 className='text-white font-medium pl-2 pr-2'> Delete </h3></div>
-                                    </span>
-                                </div>
-                            ))
-                        }
-                    </div>
-                ) : null
-            } */}
         <label>
             { 
                 fileList.preview ? (
