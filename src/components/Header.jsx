@@ -1,12 +1,14 @@
 import { useState } from 'react'
-
-
 function Header() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <h1 className='bg-black text-white text-center text-2xl flex items-center justify-center h-16 font-serif font-bold'>Black and White Image Changer</h1>
+    <main className="w=full h-16 bg-whiteS flex items-center ">
+      <div className='m-3'>
+        <h2 className=' font-Fahkwang text-black text-2xl font-medium'>Grey Image Comparer</h2>
+      </div>
+    </main>
     </>
   )
 }
